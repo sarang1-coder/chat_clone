@@ -1,14 +1,14 @@
-# React + Vite
+# Chat App
 
 **Start Project**
 
-*Create project with - npm create vite@latest
+* Create project with - npm create vite@latest
 
-*Select React
+* Select React
 
-*To install - npm i
+* To install - npm i
 
-*Run - npm run dev
+* Run - npm run dev
 
-*Install Chakra Provider - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+* Install Chakra Provider - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
