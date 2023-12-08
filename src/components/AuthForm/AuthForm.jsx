@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
+import { IoChatbubbles } from "react-icons/io5";
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -26,6 +27,8 @@ const AuthForm = () => {
       toast.error("Invalid Email OR Password", {
         duration: 2000,
       });
+    } else {
+      navigate("/");
     }
   };
 
@@ -39,13 +42,8 @@ const AuthForm = () => {
             gap={2}
             fontSize="3xl"
           >
-            <Image
-              src="https://th.bing.com/th/id/R.7ed88e34422ab9fa2554f689c642870a?rik=c3efvSgUnQvOnA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fniB%2fMaK%2fniBMaKq9T.png&ehk=LS9K12b3oZAr9rS2F574r5OnoRORo9PqMYqoTwSaJRg%3d&risl=&pid=ImgRaw&r=0"
-              h={"10"}
-              cursor={"pointer"}
-              alt="app_logo"
-            />
-            <Text as='i'>Connecto</Text>
+            <IoChatbubbles h={"10"} cursor={"pointer"} alt="app_logo" />
+            <Text as="i">Connecto</Text>
           </Flex>
 
           <Input
@@ -102,6 +100,7 @@ const AuthForm = () => {
             cursor={"pointer"}
             rounded={"md"}
             bgColor={"gray.100"}
+            p={2}
           >
             <Button colorScheme="gray">
               <Image

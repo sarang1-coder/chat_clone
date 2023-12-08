@@ -11,7 +11,7 @@ export const AuthPage = () => {
         borderRadius="md"
         border={"2px dotted gray"}
       >
-        <Flex justifyContent={"center"} alignItems={"center"} gap={20}>
+        <Flex justifyContent={"center"} alignItems={"center"} p={2} gap={20}>
           {/* left side */}
           <Box display={{ base: "none", md: "block" }}>
             <Image
